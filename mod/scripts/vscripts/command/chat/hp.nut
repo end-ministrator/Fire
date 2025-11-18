@@ -3,8 +3,6 @@ global function ServerChatCommand_Hp_Init
 
 void function ServerChatCommand_Hp_Init()
 {
-    if (IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/hp", ServerChatCommand_Hp )
 }
 

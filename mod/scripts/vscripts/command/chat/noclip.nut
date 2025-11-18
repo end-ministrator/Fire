@@ -3,8 +3,6 @@ global function Fire_Noclip
 
 void function ServerChatCommand_Noclip_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/noclip", ServerChatCommand_Noclip )
 }
 

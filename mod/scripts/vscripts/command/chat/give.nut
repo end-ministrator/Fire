@@ -5,8 +5,6 @@ global function Fire_GiveMelee
 
 void function ServerChatCommand_Give_Init()
 {
-    if ( IsLobby() || IsMenuLevel() )
-        return
     AddChatCommandCallback( "/give", ServerChatCommand_Give )
 }
 

@@ -1,13 +1,11 @@
-global function ServerChatCommand_AFK_Init
+global function ServerChatCommand_Afk_Init
 global function Fire_SetAntiAFKEnabled
 global function Fire_IsAntiAFKEnabled
 
 int AFK_WARN_TIME = 70
 
-void function ServerChatCommand_AFK_Init()
+void function ServerChatCommand_Afk_Init()
 {
-    if( IsLobby() || IsMenuLevel() )
-        return
     RegisterSignal( "Fire_AntiAFK_Stop" )
     AddCallback_OnPlayerRespawned( OnPlayerRespawned )
     AddChatCommandCallback( "/afk", ServerChatCommand_AntiAFK )

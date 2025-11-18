@@ -2,9 +2,6 @@ global function ServerChatCommand_Tp_Init
 
 void function ServerChatCommand_Tp_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
-    
     AddChatCommandCallback( "/tp", ServerChatCommand_Tp )
 }
 

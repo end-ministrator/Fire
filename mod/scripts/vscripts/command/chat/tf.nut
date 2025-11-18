@@ -3,9 +3,6 @@ global function Fire_Titanfall
 
 void function ServerChatCommand_Tf_Init()
 {
-    if (IsLobby() || IsMenuLevel())
-        return
-    
     AddChatCommandCallback( "/tf", ServerChatCommand_Tf )
 }
 

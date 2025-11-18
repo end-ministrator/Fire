@@ -15,7 +15,7 @@ void function ServerChatCommand_Pl(entity player, array<string> args)
     foreach( target in GetPlayerArray() ){
         if( !IsValid(target) )
             continue
-        string name = "Name: " + target.GetPlayerName() + " |"
+        string name = "Name: " + target.GetPlayerName()
         string uid = "UID: " + target.GetUID() + " | "
         string team = "Team: " + target.GetTeam() + " | "
         // Team: 2 | UID: 12345678901234567 | Name: PlayerName

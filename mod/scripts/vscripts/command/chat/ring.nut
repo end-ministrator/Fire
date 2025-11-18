@@ -12,9 +12,6 @@ array<RingData> rings = []
 
 void function ServerChatCommand_Ring_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
-    
     PrecacheSprite( $"materials/vgui/hud/weapons/target_ring_mid_pilot.vmt" )
     PrecacheSprite( $"materials/vgui/hud/weapons/target_ring_front_pilot.vmt" )
     PrecacheSprite( $"materials/vgui/hud/weapons/target_ring_back.vmt" )

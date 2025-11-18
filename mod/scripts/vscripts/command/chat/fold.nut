@@ -23,9 +23,6 @@ const array<string> FOLD_WEAPON_SOUNDS = [
 
 void function ServerChatCommand_Fold_Init()
 {
-	if(IsLobby() || IsMenuLevel())
-		return
-
 	FlagInit("Fold_FoldWeaponStart")
 	FlagInit("Fold_FoldWeaponStop")
 	FlagInit("Fold_CoopGeneratorUnderattackAlarmStop")

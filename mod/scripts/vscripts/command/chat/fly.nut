@@ -2,8 +2,6 @@ global function ServerChatCommand_Fly_Init
 
 void function ServerChatCommand_Fly_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/fly", ServerChatCommand_Fly )
 }
 

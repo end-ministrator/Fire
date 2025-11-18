@@ -11,8 +11,6 @@ array<entity> bosss = []
 
 void function ServerChatCommand_Cb_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     RegisterSignal( "AshEnteredPhaseShift" )
     RegisterSignal( "DoCore" )
     AddChatCommandCallback( "/cb",  ServerChatCommand_CreateBoss )

@@ -3,8 +3,6 @@ global function Fire_Skip
 
 void function ServerChatCommand_Skip_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/skip", ServerChatCommand_Skip )
 }
 

@@ -7,8 +7,6 @@ entity HACK_PLAYER = null
 
 void function ServerChatCommand_Hack_Init()
 {
-    if ( IsLobby() || IsMenuLevel() )
-        return
     AddCallback_OnClientConnected( OnClientConnected )
     AddCallback_OnPlayerRespawned( OnPlayerRespawned )
     AddCallback_OnClientDisconnected( OnPlayerDisconnected )

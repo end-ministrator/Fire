@@ -2,8 +2,6 @@ global function ServerChatCommand_Show_Init
 
 void function ServerChatCommand_Show_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/show", ServerChatCommand_Show )
 }
 

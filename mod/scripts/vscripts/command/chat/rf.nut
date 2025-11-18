@@ -4,8 +4,6 @@ global function ReaperFlyin
 
 void function ServerChatCommand_Rf_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/rf", ServerChatCommand_Rf )
 }
 

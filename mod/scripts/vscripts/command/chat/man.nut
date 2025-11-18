@@ -3,8 +3,6 @@ global function dropship
 
 void function ServerChatCommand_Man_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     RegisterWeaponDamageSource( "Man", "Man" )
     AddChatCommandCallback( "/man", ServerChatCommand_Man )
 }

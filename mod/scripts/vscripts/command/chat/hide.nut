@@ -2,8 +2,6 @@ global function ServerChatCommand_Hide_Init
 
 void function ServerChatCommand_Hide_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/hide", ServerChatCommand_Hide )
 }
 

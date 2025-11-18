@@ -2,8 +2,6 @@ global function ServerChatCommand_Core_Init
 
 void function ServerChatCommand_Core_Init()
 {
-    if( IsLobby() || IsMenuLevel() )
-        return
     AddChatCommandCallback( "/core", ServerChatCommand_Core )
 }
 

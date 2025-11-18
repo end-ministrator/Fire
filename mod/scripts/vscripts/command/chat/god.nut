@@ -3,8 +3,6 @@ global function ServerChatCommand_God_Init
 
 void function ServerChatCommand_God_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/god",  ServerChatCommand_God )
 }
 

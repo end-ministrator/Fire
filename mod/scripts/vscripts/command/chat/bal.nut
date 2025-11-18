@@ -13,8 +13,6 @@ struct PlayerScoreData
 
 void function ServerChatCommand_Bal_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback("/bal", ServerChatCommand_Balance)
 }
 

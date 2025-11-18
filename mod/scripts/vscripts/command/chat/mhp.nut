@@ -2,8 +2,6 @@ global function ServerChatCommand_Mhp_Init
 
 void function ServerChatCommand_Mhp_Init()
 {
-    if (IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/mhp", ServerChatCommand_Mhp )
 }
 

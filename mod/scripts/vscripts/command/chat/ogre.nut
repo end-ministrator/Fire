@@ -4,8 +4,6 @@ global function Fire_DropNukeTitan
 
 void function ServerChatCommand_Ogre_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/ogre", ServerChatCommand_Ogre )
 }
 

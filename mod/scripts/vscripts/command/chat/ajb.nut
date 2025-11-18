@@ -1,9 +1,9 @@
-global function ServerChatCommand_Jjb_Init
+global function ServerChatCommand_Ajb_Init
 global function Fire_SetAdminJoinBroadcastEnabled
 global function Fire_IsAdminJoinBroadcastEnabled
 
 
-void function ServerChatCommand_Jjb_Init()
+void function ServerChatCommand_Ajb_Init()
 {
     AddCallback_OnClientConnected(OnClientConnected)
     AddCallback_OnClientDisconnected(OnPlayerDisconnected)

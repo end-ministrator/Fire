@@ -3,8 +3,6 @@ global function Fire_KillAllPlayers
 
 void function ServerChatCommand_Kill_Init()
 {
-    if(IsLobby() || IsMenuLevel())
-        return
     AddChatCommandCallback( "/kill", ServerChatCommand_Kill )
 }
 
