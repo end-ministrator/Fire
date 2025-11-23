@@ -13,7 +13,7 @@ void function ServerChatCommand_Uid( entity player, array<string> args )
     }
 
     string args0 = args[0]
-    entity target = GetPlayerByNamePrefix(args[0])
+    entity target = GetPlayerByNamePrefix(args0)
     
     if( target == null ){
         Fire_ChatServerPrivateMessage( player, "未找到玩家: " + args0 )
