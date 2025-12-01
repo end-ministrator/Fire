@@ -162,7 +162,7 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/cl_chat.nut",
+			"Path": "command/chat/sv_chat.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
@@ -194,7 +194,7 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/cl_mute.nut",
+			"Path": "command/chat/sv_mute.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
@@ -258,7 +258,7 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/cl_spacebased_cannon.nut",
+			"Path": "command/chat/sv_spacebased_cannon.nut",
 			"RunOn": "SERVER && MP"
 		}
 	]
