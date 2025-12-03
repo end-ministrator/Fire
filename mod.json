@@ -110,55 +110,55 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/core.nut",
+			"Path": "command/chat/sv_core.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/tp.nut",
+			"Path": "command/chat/sv_teleport.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/fold.nut",
+			"Path": "command/chat/sv_fold.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/cheats.nut",
+			"Path": "command/chat/sv_cheats.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/god.nut",
+			"Path": "command/chat/sv_god.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/hp.nut",
+			"Path": "command/chat/sv_health.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/mhp.nut",
+			"Path": "command/chat/sv_max_health.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/team.nut",
+			"Path": "command/chat/sv_team.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/kill.nut",
+			"Path": "command/chat/sv_kill.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/cb.nut",
+			"Path": "command/chat/sv_create_boss.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/pl.nut",
+			"Path": "command/chat/sv_player.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/noclip.nut",
+			"Path": "command/chat/sv_noclip.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/ban.nut",
+			"Path": "command/chat/sv_ban.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
@@ -166,31 +166,31 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/stop.nut",
+			"Path": "command/chat/sv_stop.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/hide.nut",
+			"Path": "command/chat/sv_hide.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/show.nut",
+			"Path": "command/chat/sv_show.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/tf.nut",
+			"Path": "command/chat/sv_titan_fall.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/man.nut",
+			"Path": "command/chat/sv_man.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/map.nut",
+			"Path": "command/chat/sv_map.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/skip.nut",
+			"Path": "command/chat/sv_skip.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
@@ -198,63 +198,63 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/afk.nut",
+			"Path": "command/chat/sv_afk.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/kick.nut",
+			"Path": "command/chat/sv_kick.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/fly.nut",
+			"Path": "command/chat/sv_fly.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/bal.nut",
+			"Path": "command/chat/sv_balance.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/ogre.nut",
+			"Path": "command/chat/sv_ogre.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/ring.nut",
+			"Path": "command/chat/sv_ring.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/aa.nut",
+			"Path": "command/chat/sv_aim_assist.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/give.nut",
+			"Path": "command/chat/sv_give.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/uid.nut",
+			"Path": "command/chat/sv_uid.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/rf.nut",
+			"Path": "command/chat/sv_reaper_fall.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/danmaku.nut",
+			"Path": "command/chat/sv_danmaku.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/csb.nut",
+			"Path": "command/chat/sv_chat_server_broadcast.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/ajb.nut",
+			"Path": "command/chat/sv_admin_join_broadcas.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/hack.nut",
+			"Path": "command/chat/sv_hack.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
-			"Path": "command/chat/eject.nut",
+			"Path": "command/chat/sv_eject.nut",
 			"RunOn": "SERVER && MP"
 		},
 		{
