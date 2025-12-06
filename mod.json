@@ -1,7 +1,7 @@
 {
 	"Name": "Fire",
 	"Description": "",
-	"Version": "1.3.0",
+	"Version": "1.4.0-dev",
 	"LoadPriority": 1,
 	"ConVars": [
 		{
