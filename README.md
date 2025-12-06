@@ -58,13 +58,14 @@ Fire_AdminUIDs "1013199872353,1234567890123,9876543210987"
 - `/pl`
 - `/rf <team> <quantity>`
 - `/ring <ring类型> <name/all> [持续时间]`
-- `/stop`
+- `/stop [reason]`
 - `/chat <on/off>`
 - `/mute <name> [时间(秒)]`
 - `/unmute <name>`
 - `/sbc <name>`
 - `/team <name/all/imc/militia> <team>`
 - `/checkver`
+- `/swit <name/all/imc/militia>`
 
 # 回调
 ### **聊天命令函数（ChatCommands.gnut）**
