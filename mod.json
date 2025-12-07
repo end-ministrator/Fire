@@ -46,7 +46,10 @@
 		},
 		{
 			"Path": "sv_chat.nut",
-			"RunOn": "SERVER"
+			"RunOn": "SERVER",
+			"ServerCallback": {
+				"After": "FireChat_Init"
+			}
 		},
 		{
 			"Path": "command/sv_command.nut",
