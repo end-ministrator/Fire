@@ -291,6 +291,10 @@
 		{
 			"Path": "command/chat/sv_reload.nut",
 			"RunOn": "SERVER && MP"
+		},
+		{
+			"Path": "command/chat/sv_script.nut",
+			"RunOn": "SERVER && MP"
 		}
 	]
 }
