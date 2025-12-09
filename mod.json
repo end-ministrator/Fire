@@ -63,10 +63,10 @@
 			"RunOn": "SERVER"
 		},
 		{
-			"Path": "sv_hud_message_queue.nut",
+			"Path": "sv_hud_message.nut",
 			"RunOn": "SERVER && MP",
 			"ServerCallback": {
-				"After": "HudMessageQueue_Init"
+				"After": "HudMessage_Init"
 			}
 		},
 		{

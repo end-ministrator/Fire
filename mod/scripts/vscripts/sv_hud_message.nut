@@ -1,4 +1,4 @@
-global function HudMessageQueue_Init
+global function HudMessage_Init
 global function SendHudMessageWithPriority
 
 table< string, table<string, float> > playerMsgPriorities = {}
@@ -8,7 +8,7 @@ table< string, array<string> > playerPriorityOrder = {}
 /**
  * 初始化HUD消息队列系统，注册玩家连接回调用于数据初始化。
  */
-void function HudMessageQueue_Init()
+void function HudMessage_Init()
 {
     AddCallback_OnClientConnected( OnClientConnected )
 }
