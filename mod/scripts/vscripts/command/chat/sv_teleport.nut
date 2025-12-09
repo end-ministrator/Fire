@@ -13,7 +13,7 @@ void function ChatCommand_Tp(entity player, array<string> args)
     }
 
     if(args.len() != 2){
-        Fire_ChatServerPrivateMessage(player, "用法: /tp < name/all > < name >")
+        Fire_ChatServerPrivateMessage(player, "用法: /tp <name/all/imc/militia> <name>")
         return
     }
 
@@ -25,8 +25,14 @@ void function ChatCommand_Tp(entity player, array<string> args)
         case "all":
             teleports = GetPlayerArray()
             break
+        case "imc":
+            teleports = GetPlayerArrayOfTeam( TEAM_IMC )
+            break
+        case "militia":
+            teleports = GetPlayerArrayOfTeam( TEAM_MILITIA )
+            break
         default:
-            teleports = GetPlayersByNamePrefix(args0)
+            teleports = GetPlayersByNamePrefix( args0 )
             break
     }
 

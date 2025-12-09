@@ -28,7 +28,7 @@ Fire_AdminUIDs "1013199872353,1234567890123,9876543210987"
 - `/afk <on/off>`
 - `/ajb <on/off>`
 - `/bal < 1/2/3 >`
-- `/tp <name/all> <name>`
+- `/tp <name/all/imc/militia> <name>`
 - `/ban <name>`
 - `/kick <name> [reason]`
 - `/cb <ash/viper/richter/slone/kane/blisk/all>`
