@@ -16,24 +16,44 @@ void function ChatCommand_Bal_Init()
     AddChatCommandCallback("/bal", ChatCommand_Balance)
 }
 
-void function ChatCommand_Balance(entity player, array<string> args)
+void function ChatCommand_Balance(entity player, array<string> args) 
 {
-    if( !Fire_IsPlayerAdmin( player ) )
-    {
+    if( !Fire_IsPlayerAdmin(player) ) {
         Fire_ChatServerPrivateMessage(player, "你没有管理员权限")
         return
     }
-
-    int mode = args[0].tointeger()
-
-    if( args.len() != 1 || hasNonDigit(args[0]) || !Fire_IsValidBalanceMode( mode ) )
-    {
-        Fire_ChatServerPrivateMessage(player, "用法: /bal < 1/2/3 >")
-        Fire_ChatServerPrivateMessage(player, "1=人数平衡 2=K/D平衡 3=K-D平衡")
+    if( args.len() != 1 ) {
+        SendUsageHint(player)
         return
     }
+    if( hasNonDigit(args[0]) ) {
+        Fire_ChatServerPrivateMessage(player, "错误：请输入纯数字参数")
+        SendUsageHint(player)
+        return
+    }
+
+    int mode = -1
+    try {
+        mode = args[0].tointeger()
+    } catch( ex ) {
+        Fire_ChatServerPrivateMessage(player, "错误：无效数字格式")
+        SendUsageHint(player)
+        return
+    }
+    if( !Fire_IsValidBalanceMode(mode) ) {
+        SendUsageHint(player)
+        return
+    }
+    
     Fire_Balance(mode)
 }
+
+void function SendUsageHint(entity player) 
+{
+    Fire_ChatServerPrivateMessage(player, "用法: /bal <1/2/3>")
+    Fire_ChatServerPrivateMessage(player, "1=人数平衡 2=K/D平衡 3=K-D平衡")
+}
+
 
 bool function Fire_IsValidBalanceMode(int mode)
 {
@@ -119,5 +139,10 @@ void function Fire_BalanceByKMinusD()
 
 int function PlayerScoreDataSortDesc(PlayerScoreData a, PlayerScoreData b)
 {
-    return b.score - a.score
+    if( a.score < b.score )
+        return 1
+    else if ( a.score > b.score )
+        return -1
+    
+    return 0
 }
