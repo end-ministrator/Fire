@@ -3,7 +3,12 @@
 [BiliBili](https://space.bilibili.com/3493268113328579) | [QQ群聊](https://qun.qq.com/universal-share/share?ac=1&authKey=HKd5347fR8zDq0JXgQpZW7pPqINH17zOlVD0U%2Ba8u5jAT40uXdc5coE%2BwBvqSpKc&busi_data=eyJncm91cENvZGUiOiIxMDcyNDMzNzI3IiwidG9rZW4iOiJYZFJLMDhDd3hReGFXKzlkZzY1T1lUeWJqRWR5Z1h3cFo2UVowaEpwbXMvejRtbS9JSERLaVh4dVR3RkFuMG9jIiwidWluIjoiMjg0NDA3ODE0MCJ9&data=eWpeONIxUU9MaA1JAd4EiXns2ylY65u5dmf1MiX9dyaMVbnrQntQMYpgJ0uDTKleoiPawpfbVc_5acgC5Q7Apw&svctype=4&tempid=h5_group_info) | [GitHub](https://github.com/MiyamaeNonoa/Fire/tree/main) | [GitHub Issue](https://github.com/MiyamaeNonoa/Fire/issues)
 
 ## 概述
-Fire 是一个提供多项游戏管理功能的插件(到底该叫做插件还是模组qwq)
+Fire 是一个提供多项游戏管理命令的服务器端的模组
+
+## 诞生之路
+Fire最初叫做Source（BV11HtHzREB1）
+刚写出来那会只有召唤boss命令
+后来命令越写越多...
 
 ### 添加管理员
 修改mod.json文件中的 `Fire_AdminUIDs` 项，支持多个管理员 UID，请使用英文逗号分隔。
