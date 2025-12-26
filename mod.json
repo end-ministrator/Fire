@@ -42,6 +42,10 @@
 			"RunOn": "SERVER && MP"
 		},
 		{
+			"Path": "sv_developer.nut",
+			"RunOn": "SERVER"
+		},
+		{
 			"Path": "sv_command.nut",
 			"RunOn": "SERVER && MP",
 			"ServerCallback": {

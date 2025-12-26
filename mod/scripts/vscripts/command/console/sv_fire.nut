@@ -12,6 +12,7 @@ bool function ConsoleCommand_Fire( entity player, array<string> args )
     Fire_ChatServerPrivateMessage( player, "Name: Fire" )
     Fire_ChatServerPrivateMessage( player, "Version: " + Fire_GetVersion() )
     Fire_ChatServerPrivateMessage( player, "GitHub: " + GithubUrl )
+    Fire_ChatServerPrivateMessage( player, "IsDev: " + Fire_IsPlayerDev( player ).tostring() )
     Fire_ChatServerPrivateMessage( player, "IsAdmin: " + Fire_IsPlayerAdmin( player ).tostring() )
     return true
 }
